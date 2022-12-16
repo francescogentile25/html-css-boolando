@@ -112,11 +112,41 @@ header{
     font-size: 15px;
 }
 .price{
+    font-weight: 500;
     color: red;
     font-size: 15px;
 }
 .discount-price{
     color: black;
     text-decoration: line-through;
+}
+footer{
+    background-color:#1A1A1A ;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.info>p{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.info> a{
+    padding: 10px;
+    margin:2px;
+}
+.info >a:nth-child(2){
+    padding-left:0;
+    margin-left: 0;
+}
+.icon >p{
+    padding-bottom: 10px;
 }
