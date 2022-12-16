@@ -15,16 +15,14 @@ ul{
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 header{
     background-color: #FF6900;
-    color: #ffff;
 }
 
-.container{
+.header-container{
+    color: #ffff;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 .nav-bar{
     display: flex;
@@ -54,4 +52,71 @@ header{
 }
 .icon :last-child{
     padding-right: 0
+}
+.container-main{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row{ 
+    gap: 20px;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col{
+    min-height: 300px;
+    width: calc((100% / 3) - 20px);
+}
+
+.img-product{
+    position: relative;
+}
+.img-product>img{
+    width: 100%;
+}
+.tag{
+    position: absolute;
+    bottom:20px;
+}
+.manufacturing-tag{
+    display: inline-block;
+    background-color: green;
+}
+
+.discount-tag{
+    background-color: red;
+}
+.manufacturing-tag, .discount-tag{
+    padding: 3px 20px;
+    line-height: inherit;
+    font-weight: 500;
+    color: #ffff;
+    
+}
+
+.heart{
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top:20px;
+    right:0px;
+}
+
+.brend{
+    font-size: 15px;
+}
+.price{
+    color: red;
+    font-size: 15px;
+}
+.discount-price{
+    color: black;
+    text-decoration: line-through;
+
 }
